@@ -1,6 +1,6 @@
 package com.poc.demo.controller;
 
-import com.poc.demo.component.SingletonDesignPattern;
+import com.poc.demo.designpattern.SingletonDesignPattern;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

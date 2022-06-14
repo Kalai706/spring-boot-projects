@@ -1,4 +1,4 @@
-package com.poc.demo.component;
+package com.poc.demo.designpattern;
 
 
 /**
