@@ -1,6 +1,7 @@
 package com.corejava8.learn.stringexamples;
 
-import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class BasicStringOperation {
 
@@ -17,9 +18,11 @@ public class BasicStringOperation {
           for(int i=tempArray.length;i>0;i--){
               revString+= tempArray[i-1];
           }
-        System.out.println("Reverse String: "+ revString);
-
-          //TODO: String Reverse logic with streams
+        System.out.println("Reverse String using logic : "+ revString);
+       var streamReverseValue = Stream.of(s)
+               .map(letter-> new StringBuilder(letter).reverse())
+               .collect(Collectors.joining());
+        System.out.println("Reverse String using streams : "+ streamReverseValue);
 
     }
 }
