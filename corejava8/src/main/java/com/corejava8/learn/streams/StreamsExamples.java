@@ -16,6 +16,8 @@ public class StreamsExamples {
                 .collect(Collectors.toList());
         System.out.println(uppercase);
 
+        System.out.println("Prime or not:  "+isPrime(1001));
+
         System.out.println("------- Check the number is prime ------");
         var t1 = System.currentTimeMillis();
         var total = IntStream.iterate(1,n->n+1)
